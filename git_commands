@@ -1,0 +1,22 @@
+1. to create a new python file using terminal, use - ' code [file_name].py ', a file is created and 
+then save it then it is visible in your files section
+
+2. to create a new folder use command - ' mkdir [folder_name] you're still in my_project. To add a file directly into your_new_folder_name, you need to cd into it.
+
+3. now you are in the new folder and now we can add files into that following steps in 1.
+
+4. to come out of that folder use cd .. it essentially means "Go back to the parent folder of the current folder."
+
+6.To go into a subfolder:
+    If you're in my_project and you want to go into its subfolder week2:
+        cd week2
+        Your prompt will change from C:\...\my_project> to C:\...\my_project\week2>.
+
+    To go up and then into another folder:
+
+    If you're in my_project\week2 and you want to go to my_project\week1:
+         cd ../week1
+
+5. If a folder name has spaces, you must enclose it in double quotes:
+
+        cd "My Documents"
