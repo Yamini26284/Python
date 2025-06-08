@@ -1,0 +1,22 @@
+1. error vs bug:
+    An error is a human mistake in the code or design. An error is primarily a human mistake or oversight made by a developer during any stage of the software development lifecycle
+    A bug is the result of an error (or defect) in the software that causes it to behave unexpectedly or incorrectly
+    Analogy:
+    Think of building a house:
+
+    Error: A human mistake like misreading the blueprints, using the wrong measurements, or accidentally putting a nail through a water pipe during construction.
+    Bug: The result of that mistake, such as a wall that's crooked, a door that doesn't close properly, or a water leak that appears after the house is built.
+
+2. key points about the input() function in Python:
+
+    1.Purpose: Used to get text input from the user via the console.
+    2.Return Type: Always returns the input as a string (str), regardless of what the user types (e.g., numbers, words, symbols).
+    3. Type Conversion: If you need numerical input (integers or floats), 
+        you must explicitly convert the string using int() or float().
+        Example: age = int(input("Enter your age: "))
+    4.Prompt: Takes an optional single argument (a string) which serves as a prompt displayed to the user.
+        Example: name = input("What's your name? ")
+        input("123") is valid and will display "123" as the prompt.
+    5.Error Handling: If you try to convert input to a type it doesn't match (e.g., int("hello")),
+         it will raise a ValueError.     
+    6.No Other Arguments: It accepts at most one argument (the prompt string). Passing more than one argument is a TypeError
