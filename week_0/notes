@@ -20,3 +20,9 @@
     5.Error Handling: If you try to convert input to a type it doesn't match (e.g., int("hello")),
          it will raise a ValueError.     
     6.No Other Arguments: It accepts at most one argument (the prompt string). Passing more than one argument is a TypeError
+    
+3. print("hey, I'm ",age)  hey, I'm  34
+
+    print("hey, I'm",age)  hey, I'm 34
+    
+In functions python automatically gives  a space if it encounters multiple arguments in a function.
