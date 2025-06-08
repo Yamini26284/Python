@@ -20,3 +20,10 @@ then save it then it is visible in your files section
 5. If a folder name has spaces, you must enclose it in double quotes:
 
         cd "My Documents"
+
+6. How to push code to git
+        1. save the file
+        2. check your git status using command - 'git status'
+        3. git add [file name]
+        4. git commit -m " any comments"
+        5. git push
