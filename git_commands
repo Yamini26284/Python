@@ -27,3 +27,42 @@ then save it then it is visible in your files section
         3. git add [file name]
         4. git commit -m " any comments"
         5. git push
+-----------------------------------------------------
+deleting files:
+
+            Option 1: Using git add -A (most robust for all changes)
+        This option is often preferred because it's a "catch-all" command for staging. It stages all types of changes (additions, modifications, and deletions) across your entire repository.
+
+        Here are the commands again, with explanations:
+
+        Bash
+
+                                # 1. Stage the deletion (or any other changes you might have)
+                                git add -A
+
+                                # 2. Commit the staged changes with a message
+                                git commit -m "Delete lecture_0.py as it's no longer needed"
+
+                                # 3. Push your commit to GitHub
+                                git push
+        Command 1: git add -A
+        git add: This is the command used to add changes from your working directory (where you make edits) to the Git staging area (also known as the "index"). The staging area is where you prepare changes to be included in your next commit.
+
+        -A (or --all): This is the crucial flag here.
+
+        It tells Git to stage all changes across all files in your entire repository.
+        This includes:
+        New files: Files you've just created.
+        Modified files: Files you've changed.
+        Deleted files: Files you've removed (like your lecture_0.py).
+        It's a convenient way to say, "Git, take note of everything I've done to my files since the last commit, anywhere in this repository, and prepare it for the next commit."
+        What it does for lecture_0.py in your case: Since you manually deleted lecture_0.py from your filesystem, git add -A detects that this file is no longer present and registers this "deletion" in the staging area.
+
+        Command 2: git commit -m "Delete lecture_0.py as it's no longer needed"
+        git commit: This command creates a new "snapshot" of your project's current state. This snapshot is called a "commit" and is stored in your local Git history.
+        -m "Your message": The -m flag (short for --message) allows you to provide your commit message directly on the command line, enclosed in double quotes. This is generally preferred for simple, single-line messages, as it avoids opening a text editor.
+        The commit message is vital! It describes what changes were made in this commit and why. Good commit messages help you and others understand the project's history.
+        What it does for lecture_0.py: It takes the staged deletion of lecture_0.py (which you prepared with git add -A) and records it permanently in your local Git history as a new commit. Now, your local repository knows that lecture_0.py is no longer part of the project as of this commit.
+        Command 3: git push
+        git push: This command is used to upload your local commits to a remote repository. In your case, origin is the default name for your remote repository on GitHub, and main is your current branch. When you simply type git push, Git typically understands that you want to push your current branch to its default remote (origin/main).
+        What it does for lecture_0.py: It sends the new commit (which contains the record of lecture_0.py being deleted) from your local machine to your GitHub repository. Once this push is successful, lecture_0.py will disappear from your repository on GitHub.
