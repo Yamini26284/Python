@@ -1,10 +1,10 @@
 # FUNCTIONS
 
-''' 1. print is also a funcction that simply displays what ever input is given 
+''' 1. print is also a function that simply displays what ever input is given 
    to it inside a quotation marks which are enclosed in a paranthesis '''
 
-#print(*object, sep=' ', end='\n', file=None, flush=False) # these are parameters
-
+#print(*object, sep=' ', end='\n', file=None, flush=False) # these are named parameters
+## and these parameters are called positional parameters, given they print acccording to the positions 
 print("hello", end="")# overridng the defualt print so that it doesnt go to the next line by specifing nothing in end ''
 '''
    *object, sep=' ', end='\n', file=None, flush=False are the parameters in the print function's definition.
@@ -51,6 +51,7 @@ print("hey, I'm",age)  #hey, I'm 4
 print("hey, I'm "+name+ " and I'm "+ age)  # hey, I'm prita and I'm 4
 print("hey, I'm"+name+ "and I'm"+ age)     # hey, I'mpritaand I'm4
 
+
 # STRINGS
 ''' str (Built-in Type/Class and Function):
 strings can be used in two ways one as an object of string type and other str as a function :
@@ -84,6 +85,21 @@ greet("Alice", 30) # "Alice" and 30 are ARGUMENTS
 # Another call with different arguments
 greet("Bob", 25) # "Bob" and 25 are ARGUMENTS
 
+# Formatted Strings
+print(f"hello {name}")
 
+# STRING methods
+name = input("enter your name")
+name=name.strip() 
+# the strip() method in Python only removes whitespace from the beginning (leading) and end (trailing) of a string. 
+# It does not remove whitespace in between the string.
+print(name) 
+'''
+output: enter your name                 gabs            montane
+                        ->gabs            montane
+         enter your name    gabby motage       . 
+                        ->gabby motage       .
+
+'''
 
  
